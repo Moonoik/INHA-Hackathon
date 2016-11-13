@@ -1,0 +1,165 @@
+@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  height: 550px;
+  color: #e53935;
+  background-attachment: scroll;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../image/realbg.jpg");
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+nav #headerBar {
+  padding: 0.75rem 2rem;
+}
+nav #headerBar span {
+  font-size: 1.8em;
+  font-weight: 900;
+}
+nav #headerBar span a {
+  text-decoration: none;
+  color: #e53935;
+}
+nav #headerBar .reverse {
+  float: right;
+}
+nav #headerBar .reverse span {
+  margin: 0 0.25rem;
+}
+nav .introText {
+  width: 80%;
+  padding: 3em 0;
+  margin: auto;
+}
+nav .introText p {
+  font-size: 4em;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+section {
+  width: 100%;
+  height: 550px;
+}
+section h2 {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+section .titled {
+  width: 350px;
+}
+section .titled .highlight {
+  float: left;
+  width: 100%;
+  border-color: #f44336;
+}
+section .content {
+  width: 80%;
+  margin: 0 auto;
+}
+section .content h1.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 0.8em 0 1.25em 0;
+}
+section.gray {
+  background-color: #eee;
+}
+#gameBanner .name {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  background-color: rgba(0,0,0,0.4);
+}
+#gameBanner .name .caption {
+  position: absolute;
+  width: 100%;
+  top: 33%;
+  text-align: center;
+  line-height: 1;
+}
+#gameBanner .name .caption h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0.2em;
+}
+#gameBanner .name .caption .colord {
+  margin: 0 auto;
+  max-width: 80px;
+  border-color: #f44336;
+}
+#gameBanner .name .caption p {
+  color: #fff;
+}
+#gameBanner .name .caption p:nth-of-type(1) {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 0;
+}
+#gameBanner .name .caption p:nth-of-type(2) {
+  font-size: 18px;
+  font-weight: 600;
+}
+#gameRecommendation {
+  background-attachment: scroll;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../image/bgs.jpg");
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: #fff;
+  height: auto;
+}
+#gameRecommendation .centerd {
+  padding: 0.5em 8em 3em 8em;
+}
+#gameRecommendation .centerd .menu {
+  margin: 0 1.5rem;
+  display: inline-block;
+}
+#gameRecommendation .centerd .menu .content {
+  clear: both;
+  width: 350px;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+#gameRecommendation .centerd .menu .content p {
+  margin: 0;
+  line-height: 2.5;
+  text-align: right;
+}
+#gameBtn .content {
+  width: 80%;
+}
+#gameBtn .content h2 {
+  color: #000;
+  font-size: 1.5em;
+  text-align: center;
+}
+#gameBtn .content button {
+  width: 80%;
+  height: 8rem;
+  margin: 5rem auto;
+  font-size: 3.5rem;
+  font-weight: 900;
+  background-color: #ef5350;
+  color: #fff;
+  border: 0;
+  border-radius: 10rem;
+  display: block;
+}

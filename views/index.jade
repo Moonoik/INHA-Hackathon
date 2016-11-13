@@ -1,0 +1,68 @@
+include header
+
+section(id='gameBanner')
+	div(class='content')
+		h1(class='title') 추천 배너
+		div(id='jssor_1', style='position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1206px; height: 350px; overflow: hidden; visibility: hidden; background-color: rgba(0, 0, 0, 0.5)')
+			div(data-u='loading', style='position: absolute; top: 0px; left: 0px;')
+				div(style='filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;')
+				div(style="position:absolute;display:block;background:url('image/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;")
+			div(data-u='slides', style='cursor: default; position: relative; top: 0px; left: 0px; width: 1206px; height: 350px; overflow: hidden;')
+
+				each LIST, i in data[0].banner
+					if i == 0
+						div
+							img(data-u='image' src='#{LIST.img}')
+							a(href='#{LIST.href}' target='_blank')
+								div(class='name')
+									div(class='caption')
+										h2 #{LIST.name}
+										hr(class='colord')
+										p #{LIST.content}
+										p #{LIST.prize}
+					else
+						div(style='display: none')
+							img(data-u='image' src='#{LIST.img}')
+							a(href='#{LIST.href}' target='_blank')
+								div(class='name')
+									div(class='caption')
+										h2 #{LIST.name}
+										hr(class='colord')
+										p #{LIST.content}
+										p #{LIST.prize}
+			div(class='jssorb03', data-u='navigator', style='bottom:10px;right:10px;')
+				div(data-u='prototype', style='width:21px;height:21px;')
+					div(data-u='numbertemplate')
+			span(class='jssora03l', data-u='arrowleft', style='top:0px;left:8px;width:55px;height:55px;', data-autocenter='2')
+			span(class='jssora03r', data-u='arrowright', style='top:0px;right:8px;width:55px;height:55px;', data-autocenter='2')
+section(id='gameRecommendation')
+	div(class='content')
+		h1(class='title') 컴퓨터 및 노트북 추천
+		div(class='centerd')
+			div(class='menu')
+				div(class='titled')
+					h2 게임 검색 순위
+					hr(class='highlight')
+				div(class='content')
+					each LIST, i in data[0].naverGame
+						p #{i+1}. #{LIST}
+			div(class='menu')
+				div(class='titled')
+					h2 스팀 인기 게임
+					hr(class='highlight')
+				div(class='content')
+					each LIST, i in data[0].steamGame
+						p #{i+1}. #{LIST}
+			div(class='menu')
+				div(class='titled')
+					h2 게이밍 노트북 순위
+					hr(class='highlight')
+				div(class='content')
+					each LIST, i in data[0].gammingLaptop
+						p #{i+1}. #{LIST}
+section(id='gameBtn' class='gray')
+	div(class='content')
+		h1(class='title') 견적 짜러 가기
+		h2 당신과 어울리는 PC를 알아보아요!
+		h2 "오빠 컴퓨터 맞춰줘!"는 언제나 당신을 응원합니다!
+		button(onclick="window.open('#', '_blank');") 컴퓨터 맞추기
